@@ -1,0 +1,21 @@
+Experiment/
+│
+├── main.py             # Entry point (calls everything)
+├── config.py           # Configuration
+├── experiment.py       # Handles all componenets for the actual experimental run
+├── trial.py            # Trial generation & experiment logic
+├── player.py           # Video presentation
+├── sound.py            # Stereo audio
+├── logger.py           # CSV logging
+├── trigger.py          # Qualisys
+├── gui.py              # participants dialog
+│
+├── assets/
+│   ├── videos/
+│   └── sounds/
+│
+├── data/
+├── logs/
+│
+├── requirements.txt
+└── README.md

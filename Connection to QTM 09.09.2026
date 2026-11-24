@@ -1,0 +1,24 @@
+Connection to QTM 09.09.2026
+
+(Master-Code) PS D:\Qualysis_Projects\SdSC_Kim_Suhrkamp\Master-Code> & d:\Qualysis_Projects\SdSC_Kim_Suhrkamp\Master-Code\Scripts\python.exe d:/Qualysis_Projects/SdSC_Kim_Suhrkamp/Master-Code/QTMconnect.py
+2026-09-09 14:18:23,228 - qtm_rt - INFO - Connected
+2026-09-09 14:18:23,228 - qtm_rt - INFO - Took control
+QTM connected :)
+2026-09-09 14:18:23,228 - qtm_rt - INFO - QRTEvent.EventConnected
+2026-09-09 14:18:23,235 - qtm_rt - INFO - Released control
+2026-09-09 14:18:23,235 - asyncio - ERROR - Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<QTMReader.start_recording() done, defined at d:\Qualysis_Projects\SdSC_Kim_Suhrkamp\Master-Code\QTMconnect.py:118> exception=AttributeError("'QTMReader' object has no attribute 'parse_marker_labels'")>
+Traceback (most recent call last):
+  File "d:\Qualysis_Projects\SdSC_Kim_Suhrkamp\Master-Code\QTMconnect.py", line 140, in start_recording
+    await QTMReader.setup()  # Call setup to initialize markers and force plates
+  File "d:\Qualysis_Projects\SdSC_Kim_Suhrkamp\Master-Code\QTMconnect.py", line 93, in setup
+    marker_labels = QTMReader.parse_marker_labels(marker_xml_file)
+AttributeError: 'QTMReader' object has no attribute 'parse_marker_labels'
+2026-09-09 14:20:21,420 - qtm_rt - INFO - QRTEvent.EventCameraSettingsChanged
+2026-09-09 14:20:45,794 - qtm_rt - INFO - QRTEvent.EventWaitingForTrigger
+2026-09-09 14:20:55,809 - qtm_rt - INFO - QRTEvent.EventCaptureStarted
+2026-09-09 14:21:07,516 - qtm_rt - INFO - QRTEvent.EventCaptureSaved
+2026-09-09 14:21:08,137 - qtm_rt - INFO - QRTEvent.EventCaptureStopped
+2026-09-09 14:21:29,933 - qtm_rt - INFO - QRTEvent.EventConnectionClosed
+2026-09-09 14:21:30,996 - qtm_rt - INFO - QRTEvent.EventQTMShuttingDown
+2026-09-09 14:21:30,997 - qtm_rt - INFO - Disconnected
